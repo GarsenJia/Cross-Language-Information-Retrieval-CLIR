@@ -1,0 +1,63 @@
+queries:
+  output: processed_queries
+  parse: false
+  process:
+    normalize:
+      lowercase: true
+      report: false
+    stem: false
+    stopwords: lucene
+    strict_check: false
+    tokenize: moses
+  psq:
+    lang: eng
+    normalize:
+      lowercase: true
+      report: false
+    path: zho_eng_clean_reduced_pdt.dict
+    stem: false
+    stopwords: lucene
+    threshold: 0.97
+retrieve:
+  b: 0.4
+  fb_docs: 10
+  fb_terms: 10
+  input:
+    index:
+      path: /home/shengyi/764/CLIR/runs/query-translation/index
+  k1: 0.9
+  log_explanations: false
+  log_explanations_cutoff: 10
+  mu: 1000
+  name: bm25
+  number: 1000
+  original_query_weight: 0.5
+  output: retrieve
+  parse: false
+  psq: true
+  rm3: false
+  rm3_logging: false
+run:
+  name: PSQ
+  path: runs/PSQ
+  results: results.txt
+  stage1:
+    mode: streaming
+    num_jobs: 1
+    progress_interval: 10000
+  stage2:
+    mode: streaming
+    num_jobs: 1
+    progress_interval: 10
+topics:
+  fields: title
+  input:
+    encoding: utf8
+    format: json
+    lang: eng
+    path: /home/shengyi/764/CLIR/dev.topics.v1-0.jsonl
+    prefix: false
+    qrels_lang: zho
+    source: original
+    strip_non_digits: false
+  output: false

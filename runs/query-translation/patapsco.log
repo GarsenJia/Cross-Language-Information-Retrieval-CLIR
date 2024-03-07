@@ -1,0 +1,18 @@
+2024-03-06 19:17:58,824 - patapsco.run - INFO - Patapsco version 1.0.0-dev
+2024-03-06 19:17:58,826 - patapsco.run - INFO - Writing output to: /home/shengyi/764/CLIR/runs/query-translation
+2024-03-06 19:17:59,069 - patapsco.job - INFO - Stage 1 is a streaming pipeline.
+2024-03-06 19:17:59,070 - patapsco.job - INFO - Stage 1 pipeline: Hc4JsonDocumentReader | DocumentProcessor | DatabaseWriter | LuceneIndexer
+2024-03-06 19:17:59,073 - patapsco.retrieve - INFO - Index location: runs/query-translation/index
+2024-03-06 19:17:59,074 - patapsco.job - INFO - Stage 2 is a streaming pipeline.
+2024-03-06 19:17:59,075 - patapsco.job - INFO - Stage 2 pipeline: Hc4JsonTopicReader | TopicProcessor | QueryProcessor | QueryWriter | PyseriniRetriever | JsonResultsWriter | TrecResultsWriter
+2024-03-06 19:17:59,076 - patapsco.job - INFO - Starting run: query translation
+2024-03-06 19:17:59,076 - patapsco.job - INFO - Stage 1: Starting processing of documents
+2024-03-06 19:18:03,984 - patapsco.job - INFO - Stage 1: Ingested 998 documents
+2024-03-06 19:18:03,985 - patapsco.job - INFO - Stage 1 took 4.9 secs
+2024-03-06 19:18:03,985 - patapsco.job - INFO - Stage 2: Starting processing of topics
+2024-03-06 19:18:04,014 - patapsco.retrieve - INFO - Using BM25 with parameters k1=0.9 and b=0.4
+2024-03-06 19:18:04,079 - patapsco.job - INFO - Stage 2: Processed 2 topics
+2024-03-06 19:18:04,080 - patapsco.job - INFO - Stage 2 took 0.1 secs
+2024-03-06 19:18:04,088 - patapsco.score - INFO - Average scores over 2 queries: map: 0.354, ndcg: 0.482, ndcg_prime: 0.482, recall_100: 0.438, recall_1000: 0.438
+2024-03-06 19:18:04,091 - patapsco.job - INFO - Memory usage: 791.6 MB
+2024-03-06 19:18:04,092 - patapsco.job - INFO - Run complete

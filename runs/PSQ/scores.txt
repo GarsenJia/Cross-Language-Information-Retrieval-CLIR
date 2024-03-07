@@ -1,0 +1,15 @@
+map                      	5	0.8088
+ndcg                     	5	0.9255
+ndcg_prime               	5	0.9295
+recall_100               	5	1.0000
+recall_1000              	5	1.0000
+map                      	6	0.7398
+ndcg                     	6	0.7647
+ndcg_prime               	6	0.7766
+recall_100               	6	1.0000
+recall_1000              	6	1.0000
+map                      	all	0.7743
+ndcg                     	all	0.8451
+ndcg_prime               	all	0.8530
+recall_100               	all	1.0000
+recall_1000              	all	1.0000

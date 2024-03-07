@@ -1,0 +1,16 @@
+2024-03-06 19:36:34,906 - patapsco.run - INFO - Patapsco version 1.0.0-dev
+2024-03-06 19:36:34,911 - patapsco.run - INFO - Writing output to: /home/shengyi/764/CLIR/runs/PSQ
+2024-03-06 19:36:34,917 - patapsco.retrieve - INFO - Index location: /home/shengyi/764/CLIR/runs/query-translation/index
+2024-03-06 19:36:34,919 - patapsco.job - INFO - Stage 2 is a streaming pipeline.
+2024-03-06 19:36:34,920 - patapsco.job - INFO - Stage 2 pipeline: Hc4JsonTopicReader | TopicProcessor | QueryProcessor | QueryWriter | PyseriniRetriever | JsonResultsWriter | TrecResultsWriter
+2024-03-06 19:36:34,921 - patapsco.job - INFO - Starting run: PSQ
+2024-03-06 19:36:34,923 - patapsco.job - INFO - Stage 2: Starting processing of topics
+2024-03-06 19:36:35,987 - patapsco.text - INFO - Downloading the xx spacy model. This may take a few minutes...
+2024-03-06 19:36:39,216 - patapsco.text - INFO - Loading the xx spacy model
+2024-03-06 19:36:51,648 - patapsco.retrieve - INFO - Using PSQ
+2024-03-06 19:36:51,650 - patapsco.retrieve - INFO - Using BM25 with parameters k1=0.9 and b=0.4
+2024-03-06 19:36:51,723 - patapsco.job - INFO - Stage 2: Processed 2 topics
+2024-03-06 19:36:51,724 - patapsco.job - INFO - Stage 2 took 16.8 secs
+2024-03-06 19:36:51,732 - patapsco.score - INFO - Average scores over 2 queries: map: 0.774, ndcg: 0.845, ndcg_prime: 0.853, recall_100: 1.000, recall_1000: 1.000
+2024-03-06 19:36:51,734 - patapsco.job - INFO - Memory usage: 1.6 GB
+2024-03-06 19:36:51,736 - patapsco.job - INFO - Run complete

@@ -1,0 +1,56 @@
+{
+    "stage1": {
+        "count": 998,
+        "timing": [
+            [
+                "Hc4JsonDocumentReader",
+                0.0822980266821105
+            ],
+            [
+                "DocumentProcessor",
+                2.690038255037507
+            ],
+            [
+                "DatabaseWriter",
+                0.5631207118858583
+            ],
+            [
+                "LuceneIndexer",
+                1.2631814899359597
+            ]
+        ]
+    },
+    "stage2": {
+        "count": 2,
+        "timing": [
+            [
+                "Hc4JsonTopicReader",
+                4.022200300823897e-05
+            ],
+            [
+                "TopicProcessor",
+                2.2904991055838764e-05
+            ],
+            [
+                "QueryProcessor",
+                0.0005465560097945854
+            ],
+            [
+                "QueryWriter",
+                0.00011912699847016484
+            ],
+            [
+                "PyseriniRetriever",
+                0.07701244299823884
+            ],
+            [
+                "JsonResultsWriter",
+                0.00033346998679917306
+            ],
+            [
+                "TrecResultsWriter",
+                2.8758004191331565e-05
+            ]
+        ]
+    }
+}

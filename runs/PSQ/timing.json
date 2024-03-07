@@ -1,0 +1,39 @@
+{
+    "stage1": {
+        "count": 0,
+        "timing": []
+    },
+    "stage2": {
+        "count": 2,
+        "timing": [
+            [
+                "Hc4JsonTopicReader",
+                4.6160988858900964e-05
+            ],
+            [
+                "TopicProcessor",
+                3.542299964465201e-05
+            ],
+            [
+                "QueryProcessor",
+                0.024897965995478444
+            ],
+            [
+                "QueryWriter",
+                0.00012967501243110746
+            ],
+            [
+                "PyseriniRetriever",
+                0.058377559995278716
+            ],
+            [
+                "JsonResultsWriter",
+                0.004784459990332834
+            ],
+            [
+                "TrecResultsWriter",
+                0.001010998006677255
+            ]
+        ]
+    }
+}

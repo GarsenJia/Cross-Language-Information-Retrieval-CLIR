@@ -1,0 +1,34 @@
+queries:
+  output: processed_queries
+  parse: false
+  process:
+    normalize:
+      lowercase: false
+      report: false
+    stem: false
+    stopwords: lucene
+    strict_check: true
+    tokenize: stanza
+run:
+  name: query translation stanza
+  path: runs/query-translation-stanza
+  results: results.txt
+  stage1:
+    mode: streaming
+    num_jobs: 1
+    progress_interval: 10000
+  stage2:
+    mode: streaming
+    num_jobs: 1
+    progress_interval: 10
+topics:
+  fields: title
+  input:
+    encoding: utf8
+    format: json
+    lang: zho
+    path: /home/shengyi/764/CLIR/dev.topics.v1-0.jsonl
+    prefix: false
+    source: human translation
+    strip_non_digits: false
+  output: false

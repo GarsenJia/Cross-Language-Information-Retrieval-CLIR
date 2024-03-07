@@ -1,0 +1,16 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+map                      	5	0.0833
+ndcg                     	5	0.1952
+ndcg_prime               	5	0.1952
+recall_100               	5	0.2500
+recall_1000              	5	0.2500
+map                      	6	0.6250
+ndcg                     	6	0.7694
+ndcg_prime               	6	0.7694
+recall_100               	6	0.6250
+recall_1000              	6	0.6250
+map                      	all	0.3542
+ndcg                     	all	0.4823
+ndcg_prime               	all	0.4823
+recall_100               	all	0.4375
+recall_1000              	all	0.4375

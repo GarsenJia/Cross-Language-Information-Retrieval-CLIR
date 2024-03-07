@@ -1,0 +1,25 @@
+2024-03-06 22:04:25,334 - patapsco.run - INFO - Patapsco version 1.0.0-dev
+2024-03-06 22:04:25,359 - patapsco.run - INFO - Writing output to: /home/shengyi/764/CLIR/runs/query-translation-truecase
+2024-03-06 22:04:25,410 - patapsco.job - INFO - Stage 1 is a streaming pipeline.
+2024-03-06 22:04:25,411 - patapsco.job - INFO - Stage 1 pipeline: Hc4JsonDocumentReader | DocumentProcessor | DatabaseWriter | LuceneIndexer
+2024-03-06 22:04:25,430 - patapsco.retrieve - INFO - Index location: runs/query-translation-truecase/index
+2024-03-06 22:04:25,431 - patapsco.job - INFO - Stage 2 is a streaming pipeline.
+2024-03-06 22:04:25,432 - patapsco.job - INFO - Stage 2 pipeline: Hc4JsonTopicReader | TopicProcessor | QueryProcessor | QueryWriter | PyseriniRetriever | JsonResultsWriter | TrecResultsWriter
+2024-03-06 22:04:56,985 - patapsco.run - INFO - Patapsco version 1.0.0-dev
+2024-03-06 22:04:56,988 - patapsco.run - INFO - Writing output to: /home/shengyi/764/CLIR/runs/query-translation-truecase
+2024-03-06 22:04:56,993 - patapsco.job - INFO - Stage 1 is a streaming pipeline.
+2024-03-06 22:04:56,994 - patapsco.job - INFO - Stage 1 pipeline: Hc4JsonDocumentReader | DocumentProcessor | DatabaseWriter | LuceneIndexer
+2024-03-06 22:04:56,997 - patapsco.retrieve - INFO - Index location: runs/query-translation-truecase/index
+2024-03-06 22:04:56,998 - patapsco.job - INFO - Stage 2 is a streaming pipeline.
+2024-03-06 22:04:56,999 - patapsco.job - INFO - Stage 2 pipeline: Hc4JsonTopicReader | TopicProcessor | QueryProcessor | QueryWriter | PyseriniRetriever | JsonResultsWriter | TrecResultsWriter
+2024-03-06 22:04:59,632 - patapsco.job - INFO - Starting run: query translation truecase
+2024-03-06 22:04:59,633 - patapsco.job - INFO - Stage 1: Starting processing of documents
+2024-03-06 22:05:05,117 - patapsco.job - INFO - Stage 1: Ingested 998 documents
+2024-03-06 22:05:05,118 - patapsco.job - INFO - Stage 1 took 5.5 secs
+2024-03-06 22:05:05,119 - patapsco.job - INFO - Stage 2: Starting processing of topics
+2024-03-06 22:05:05,126 - patapsco.retrieve - INFO - Using BM25 with parameters k1=0.9 and b=0.4
+2024-03-06 22:05:05,143 - patapsco.job - INFO - Stage 2: Processed 2 topics
+2024-03-06 22:05:05,144 - patapsco.job - INFO - Stage 2 took 0.0 secs
+2024-03-06 22:05:05,152 - patapsco.score - INFO - Average scores over 2 queries: map: 0.354, ndcg: 0.482, ndcg_prime: 0.482, recall_100: 0.438, recall_1000: 0.438
+2024-03-06 22:05:05,158 - patapsco.job - INFO - Memory usage: 1.4 GB
+2024-03-06 22:05:05,159 - patapsco.job - INFO - Run complete

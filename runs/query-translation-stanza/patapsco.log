@@ -1,0 +1,24 @@
+2024-03-06 22:07:18,712 - patapsco.run - INFO - Patapsco version 1.0.0-dev
+2024-03-06 22:07:18,716 - patapsco.run - INFO - Writing output to: /home/shengyi/764/CLIR/runs/query-translation-stanza
+2024-03-06 22:07:18,723 - patapsco.job - INFO - Stage 1 is a streaming pipeline.
+2024-03-06 22:07:18,725 - patapsco.job - INFO - Stage 1 pipeline: Hc4JsonDocumentReader | DocumentProcessor | DatabaseWriter | LuceneIndexer
+2024-03-06 22:07:18,728 - patapsco.retrieve - INFO - Index location: runs/query-translation-stanza/index
+2024-03-06 22:07:18,729 - patapsco.job - INFO - Stage 2 is a streaming pipeline.
+2024-03-06 22:07:18,730 - patapsco.job - INFO - Stage 2 pipeline: Hc4JsonTopicReader | TopicProcessor | QueryProcessor | QueryWriter | PyseriniRetriever | JsonResultsWriter | TrecResultsWriter
+2024-03-06 22:07:18,732 - patapsco.job - INFO - Starting run: query translation stanza
+2024-03-06 22:07:18,734 - patapsco.job - INFO - Stage 1: Starting processing of documents
+2024-03-06 22:07:18,783 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2024-03-06 22:07:19,077 - stanza - INFO - Downloaded file to /home/shengyi/stanza_resources/resources.json
+2024-03-06 22:07:19,093 - stanza - INFO - Loading these models for language: zh-hans (Simplified_Chinese): | tokenize  | gsdsimp |
+2024-03-06 22:07:19,095 - stanza - INFO - Using device: cuda
+2024-03-06 22:07:19,096 - stanza - INFO - Loading: tokenize
+2024-03-06 22:07:20,774 - stanza - INFO - Done loading processors!
+2024-03-06 22:07:49,035 - patapsco.job - INFO - Stage 1: Ingested 998 documents
+2024-03-06 22:07:49,036 - patapsco.job - INFO - Stage 1 took 30.3 secs
+2024-03-06 22:07:49,038 - patapsco.job - INFO - Stage 2: Starting processing of topics
+2024-03-06 22:07:49,073 - patapsco.retrieve - INFO - Using BM25 with parameters k1=0.9 and b=0.4
+2024-03-06 22:07:49,094 - patapsco.job - INFO - Stage 2: Processed 2 topics
+2024-03-06 22:07:49,096 - patapsco.job - INFO - Stage 2 took 0.1 secs
+2024-03-06 22:07:49,104 - patapsco.score - INFO - Average scores over 2 queries: map: 0.362, ndcg: 0.556, ndcg_prime: 0.563, recall_100: 0.375, recall_1000: 0.375
+2024-03-06 22:07:49,110 - patapsco.job - INFO - Memory usage: 1.6 GB
+2024-03-06 22:07:49,111 - patapsco.job - INFO - Run complete
